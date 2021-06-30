@@ -1,0 +1,549 @@
+<html>
+  <style type="text/css">
+    @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 45px;
+      font-weight: 500;
+      margin-top: 10px;
+      font-family: fantasy;
+    }
+    h3 {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+    .size {
+      margin-top: 12px;
+      width: 100%;
+      height: 100%;
+    }
+    .btn {
+      background-color: rgb(0, 0, 0, 0.6);
+      display: block;
+      margin: 12px 0px 0px 12px;
+      text-align: center;
+      border-radius: 8px;
+      border: 2px solid #366473;
+      padding: 14px 80px;
+      outline: none;
+      color: white;
+      cursor: pointer;
+      transition: 0.25px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 20px;
+    }
+    .size {
+      width: 550px;
+      height: 550px;
+      margin-top: 70px;
+      margin-left: 10%;
+    }
+    @media (max-width: 700px) {
+      .size {
+        width: 550px;
+        height: 550px;
+        margin-top: 70px;
+      }
+    }
+  </style>
+  <body>
+    <center>
+      <!-- <h1>  PREDICTION :  </h1> -->
+
+      {%if data == 34%}
+      <h1>PREDICTION : North Nazimabad</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/North+Nazimabad+Town,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9406726,67.0418153,13z/data=!3m1!4b1!4m5!3m4!1s0x3eb33f8014fe5943:0x11df7a65effb1ef6!8m2!3d24.9372146!4d67.042281"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/North Naimabad.jpg')}}"
+      /></a>
+
+      {%elif data == 15%}
+      <h1>PREDICTION : Gulshan e Iqbal</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Gulshan-e-Iqbal,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9210938,67.0914055,13z/data=!3m1!4b1!4m9!1m2!2m1!1sGulshan+e+Iqbal!3m5!1s0x3eb338b808bfd6b1:0x997b1a02c2570822!8m2!3d24.9180271!4d67.0970916!15sCg9HdWxzaGFuIGUgSXFiYWySAQxzdWJsb2NhbGl0eTE"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/gulshan.jpg')}}"
+      /></a>
+
+      {%elif data == 28%}
+      <h1>PREDICTION : Malir Cantt</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Malir+Cantonment,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9462845,67.2208239,12z/data=!3m1!4b1!4m5!3m4!1s0x3eb337ece9d6a8a3:0xcaa17fe43aeae776!8m2!3d24.9596097!4d67.2251998"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/Malir.jpg')}}"
+      /></a>
+
+      {%elif data == 13%}
+      <h1>PREDICTION : North Karachi</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/North+Karachi+Twp,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.974588,67.0679884,13z/data=!3m1!4b1!4m5!3m4!1s0x3eb340e59b6b225b:0x1951829acb486c7e!8m2!3d24.9728707!4d67.0643315"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/North karachi')}}"
+      /></a>
+
+      {%elif data == 33%}
+      <h1>PREDICTION : Gulistan e Jauhar</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Gulistan-e-Johar,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9199656,67.1366525,13z/data=!3m1!4b1!4m5!3m4!1s0x3eb338fa00456acf:0x7a277bdfeb6b99aa!8m2!3d24.9204194!4d67.1343848"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/jauhar.jpg')}}"
+      /></a>
+
+      {%elif data == 14%}
+      <h1>PREDICTION : Gulshan</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Gulshan-e-Iqbal,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9210938,67.0914055,13z/data=!3m1!4b1!4m5!3m4!1s0x3eb338b808bfd6b1:0x997b1a02c2570822!8m2!3d24.9180271!4d67.0970916"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/gulshan.jpg')}}"
+      /></a>
+
+      {%elif data == 4%}
+      <h1>PREDICTION : Federal B Area</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Federal+B+Area+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9344836,67.065196,13z/data=!3m1!4b1!4m5!3m4!1s0x3eb33f68689fe4f9:0xcf5ef741e646eeff!8m2!3d24.9274729!4d67.0641265"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/Federal B.jpg')}}"
+      /></a>
+
+      {%elif data == 8%}
+      <h1>PREDICTION : Bufferzone</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Buffer+Zone,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9554707,67.0677284,15z/data=!3m1!4b1!4m5!3m4!1s0x3eb340979a089751:0xb5046520e6b41807!8m2!3d24.9570898!4d67.0678065"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/bufferzone1.jpg')}}"
+      /></a>
+
+      {%elif data == 39%}
+      <h1>PREDICTION : Saddar</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Saddar+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8625852,67.0252427,14z/data=!3m1!4b1!4m5!3m4!1s0x3eb33e6d06bea525:0xca5759c73e8b99ce!8m2!3d24.8615984!4d67.0290744"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/Sadar.jpg')}}"
+      /></a>
+
+      {%elif data == 42%}
+      <h1>PREDICTION : Shah Faisal Colony</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Shah+Faisal+Colony,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8728813,67.1621416,13z/data=!3m1!4b1!4m5!3m4!1s0x3eb3399d42aef5f1:0xa5813c4e620196a7!8m2!3d24.8773062!4d67.1591053"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/Shah faisal.jpg')}}"
+      /></a>
+
+      {%elif data == 24%}
+      <h1>PREDICTION : Clifton</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Clifton,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8183044,67.0196626,13z/data=!3m1!4b1!4m5!3m4!1s0x3eb33dbbdc1875bf:0x6a6572ab3a66fed8!8m2!3d24.8269877!4d67.025096"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/Clifton.jpg')}}"
+      /></a>
+
+      {%elif data == 5%}
+      <h1>PREDICTION : Korangi</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Korangi,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8352207,67.1328932,12z/data=!3m1!4b1!4m5!3m4!1s0x3eb33b07c73d0a7f:0xecc47fa378e95fd5!8m2!3d24.8387414!4d67.1209226"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/korangi.jpg')}}"
+      /></a>
+
+      {%elif data == 18%}
+      <h1>PREDICTION : Gulzar e Hijri</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Gulzar-e-Hijri+Gulshan-e-Iqbal,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9567498,67.1263215,13z/data=!3m1!4b1!4m5!3m4!1s0x3eb34760beb2d8a1:0x554a7a62506ad696!8m2!3d24.9557163!4d67.1349591"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/landmark2.jpg')}}"
+      /></a>
+
+      {%elif data == 31%}
+      <h1>PREDICTION : Nazimabad</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Nazimabad,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9152292,67.032611,14z/data=!3m1!4b1!4m5!3m4!1s0x3eb33fbd469d9bcd:0x749325c6e39952f3!8m2!3d24.910688!4d67.0310973"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/Naya Nazimabad.jpg')}}"
+      /></a>
+
+      {%elif data == 35%}
+      <h1>PREDICTION : New Karachi</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/New+Karachi+Town,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9914271,67.064244,13z/data=!3m1!4b1!4m5!3m4!1s0x3eb3411d1b1aa5dd:0x7f8008a575c0b797!8m2!3d24.999885!4d67.0648263"
+      >
+        <img
+          class="size"
+          src="{{url_for('static', filename='Images/New Karachi.jpg')}}"
+        />
+      </a>
+      {%elif data == 32%}
+      <h1>PREDICTION : Shadman</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Shadman+Town+North+Karachi+Twp,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9623486,67.0551514,14z/data=!3m1!4b1!4m5!3m4!1s0x3eb3408e710162e3:0x284cbf47c6e9ef4c!8m2!3d24.9623968!4d67.0540552"
+      >
+        <img
+          class="size"
+          src="{{url_for('static', filename='Images/Shadman.jpg')}}"
+      /></a>
+
+      {%elif data == 36%}
+      <h1>PREDICTION : Shabbirabad</h1>
+      <a
+        href="https://www.google.com/maps/place/Block+B+Shabbirabad,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8770428,67.0815398,16z/data=!3m1!4b1!4m5!3m4!1s0x3eb33eb9d015a67d:0x6e54fbf8f430abf7!8m2!3d24.8769501!4d67.0814596"
+      >
+        <img
+          class="size"
+          src="{{url_for('static', filename='Images/shabbirabad.jpg')}}"
+        />
+      </a>
+
+      {%elif data == 20%}
+      <h1>PREDICTION : PECHS</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Pakistan+Employees+Co-Operative+Housing+Society+PECHS,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8681367,67.0617646,14z/data=!3m1!4b1!4m5!3m4!1s0x3eb33ec754efc47f:0x12e3c65adb1fe013!8m2!3d24.8688044!4d67.0613528"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/PECHS.jpg')}}"
+      /></a>
+
+      {%elif data == 23%}
+      <h1>PREDICTION : Green Park City</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Green+Park+City+Quaidabad,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.857773,67.2223591,16z/data=!3m1!4b1!4m5!3m4!1s0x3eb330e831e6a7db:0xdfa1698f0d036834!8m2!3d24.8576792!4d67.2229653"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/GreenPark.jpeg')}}"
+      /></a>
+
+      {%elif data == 40%}
+      <h1>PREDICTION : University Road</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/University+Rd,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9290421,67.1145359,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb338d9fe623b5d:0x20a2fba6329c561c!8m2!3d24.9290421!4d67.1145359"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/UniRoad.jpg')}}"
+      /></a>
+
+      {%elif data == 11%}
+      <h1>PREDICTION : DHA</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Defence+Housing+Authority,+Karachi,+Karachi+City,+Sindh+75500,+Pakistan/@24.7983935,67.032767,13z/data=!3m1!4b1!4m5!3m4!1s0x3eb33cf02eda6f15:0x937892677f0377a2!8m2!3d24.8043485!4d67.0576612"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/DHA.jpg')}}"
+      /></a>
+
+      {%elif data == 41%}
+      <h1>PREDICTION : North Karachi</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/North+Karachi+Twp,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.974588,67.0679885,13z/data=!3m1!4b1!4m5!3m4!1s0x3eb340e59b6b225b:0x1951829acb486c7e!8m2!3d24.9728707!4d67.0643315"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/North karachi.jpg')}}"
+      /></a>
+
+      {%elif data == 6%}
+      <h1>PREDICTION : Orangi Town</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Orangi+Town,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9494515,67.0069432,14z/data=!3m1!4b1!4m5!3m4!1s0x3eb36ae71fc40a31:0xcfbb1d61e6ab566d!8m2!3d24.9517285!4d67.0022715"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/Orangi.jpg')}}"
+      /></a>
+
+      {%elif data == 44%}
+      <h1>PREDICTION : Surjani Town</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Surjani+Town,+Karachi,+Karachi+City,+Sindh,+Pakistan/@25.0444938,67.0712497,13z/data=!3m1!4b1!4m5!3m4!1s0x3eb343c1727792b3:0x774c5ea8a254dbbf!8m2!3d25.040071!4d67.0623962"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/Surjani Town.jpg')}}"
+      /></a>
+
+      {%elif data == 45%}
+      <h1>PREDICTION : Hydri</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Dolmen+Mall+Hyderi/@24.9291616,67.0225409,14z/data=!4m9!1m2!2m1!1sHydri+Karachi!3m5!1s0x3eb33f86aa57d827:0xd39c25bb3a11262e!8m2!3d24.9354639!4d67.0403939!15sCg1IeWRyaSBLYXJhY2hpkgEPc2hvcHBpbmdfY2VudGVy"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/hydri.jpg')}}"
+      /></a>
+
+      {%elif data == 29%}
+      <h1>PREDICTION : Mehmodabaad</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Mehmoodabad+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8541135,67.0778574,14z/data=!3m1!4b1!4m5!3m4!1s0x3eb33c18f5a0efe1:0x4726ed9af1512866!8m2!3d24.8527673!4d67.0747573"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/Mehmodabaad.jpg')}}"
+      /></a>
+
+      {%elif data == 37%}
+      <h1>PREDICTION : Gulshan-e-Rafi Malir</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Gulshan+e+Rafi+Shah+Faisal+Colony,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8708762,67.1793619,15z/data=!3m1!4b1!4m5!3m4!1s0x3eb33a031e70f263:0x3a5c6aaa530625cb!8m2!3d24.8723475!4d67.1790217"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/gulshan Rafi.jpg')}}"
+      /></a>
+
+      {%elif data == 38%}
+      <h1>PREDICTION : AFOHS FALCON COMPLEX</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/AFOHS+Falcon+Complex+New+Malir+Street+7/@24.9551088,67.1807849,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb33804f7fc967b:0x9117a9b579203930!8m2!3d24.9550808!4d67.1808825"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/AFOHS.jpg')}}"
+      /></a>
+
+      {%elif data == 30%}
+      <h1>PREDICTION : Frere Town</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Frere+Town,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8389242,67.0361772,16z/data=!3m1!4b1!4m5!3m4!1s0x3eb33dcfdd22bb75:0x934f95a766175d8b!8m2!3d24.8389371!4d67.0367783"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/Frere.jpg')}}"
+      /></a>
+
+      {%elif data == 43%}
+      <h1>PREDICTION : Jut Land (Lines Area)</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Jutland+Lines+Lines+Area,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8650367,67.0392691,18z/data=!3m1!4b1!4m9!1m2!2m1!1sjut+land+lines+area!3m5!1s0x3eb33e6461c44759:0x65611e6aa73432d6!8m2!3d24.8649055!4d67.0393847!15sChJqdXRsYW5kIGxpbmVzIGFyZWGSAQxuZWlnaGJvcmhvb2Q"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/jut land.jpg')}}"
+      /></a>
+
+      {%elif data == 0%}
+      <h1>PREDICTION : Lucknow Society</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Lucknow+Society+Sector+31+E+Korangi,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8228201,67.1204192,16z/data=!3m1!4b1!4m5!3m4!1s0x3eb33ba1aee34bcb:0xfaddd83ef1952179!8m2!3d24.8235551!4d67.1194406"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/licknow.jpg')}}"
+      /></a>
+
+      {%elif data == 27%}
+      <h1>PREDICTION : Bahria Town</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Bahria+Town+Karachi,+Karachi,+Karachi+City,+Sindh,+Pakistan/@25.0141945,67.3076104,13z/data=!3m1!4b1!4m5!3m4!1s0x3eb34a0522358bb9:0xe9cfd8e32eeff2b8!8m2!3d25.0214515!4d67.3034311"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/Bahria.jpg')}}"
+      /></a>
+
+      {%elif data == 26%}
+      <h1>PREDICTION : Garden West</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Garden+West+Area,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.877712,67.0192266,16z/data=!3m1!4b1!4m5!3m4!1s0x3eb33e391950f447:0x1d0687a8008960b1!8m2!3d24.87804!4d67.0189065"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/garden west.jpg')}}"
+      /></a>
+
+      {%elif data == 25%}
+      <h1>PREDICTION : Gulshan e Maymaar</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Gulshan-e-Maymar,+Karachi,+Karachi+City,+Sindh,+Pakistan/@25.0224549,67.1320497,14z/data=!3m1!4b1!4m5!3m4!1s0x3eb346f4ee2f512f:0x75bf3f7abcacdafc!8m2!3d25.022147!4d67.1345958"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/maymaar.jpg')}}"
+      /></a>
+
+      {%elif data == 1%}
+      <h1>PREDICTION : Gulzar-e-Hijri</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Gulzar-e-Hijri+Gulshan-e-Iqbal,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9567498,67.1263215,13z/data=!3m1!4b1!4m5!3m4!1s0x3eb34760beb2d8a1:0x554a7a62506ad696!8m2!3d24.9557163!4d67.1349591"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/gulzar e hijri.jpg')}}"
+      /></a>
+
+      {%elif data == 22%}
+      <h1>PREDICTION : Bahadurabad</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Bahadurabad+Gulshan-e-Iqbal,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8817512,67.0692652,16z/data=!3m1!4b1!4m5!3m4!1s0x3eb33ec1ef53e5c7:0x14849036f9416ef6!8m2!3d24.8824515!4d67.0693895"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/bahadurabad.jpg')}}"
+      /></a>
+
+      {%elif data == 21%}
+      <h1>PREDICTION : Majeed SRE Dalmia</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Govt+Degree+College+Stadium+Road+SRE+MAJEED/@24.8982221,67.1057475,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb3392f8190dcf5:0x76a2225b7c07482!8m2!3d24.8982221!4d67.1057475"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/MajeedSRE.jpg')}}"
+      /></a>
+
+      {%elif data == 19%}
+      <h1>PREDICTION : Gulistan e Mazdoor</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Gulshan-e-Mazdoor+Gulshan+E+Mazdoor+Extension+Naval+Colony,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9488608,66.943203,17z/data=!3m1!4b1!4m9!1m2!2m1!1sgulistan+e+mazdoor!3m5!1s0x3eb36b1893a459e7:0x2839750400bbbe83!8m2!3d24.9486763!4d66.9433277!15sChJndWxpc3RhbiBlIG1hemRvb3KSAQxuZWlnaGJvcmhvb2Q"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/gulistan e mazdoor.jpg')}}"
+      /></a>
+
+      {%elif data == 17%}
+      <h1>PREDICTION : Shaheed e Milat</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Shaheed-e-Millat+Rd,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8642177,67.0854756,17z/data=!3m1!4b1!4m9!1m2!2m1!1sshaheed+e+milat!3m5!1s0x3eb33c0572c40fe5:0xa4ac4451b6df758f!8m2!3d24.8642177!4d67.0854756!15sCg9zaGFoZWVkIGUgbWlsYXSSAQVyb3V0ZQ"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/shaheed.jpg')}}"
+      /></a>
+
+      {%elif data == 16%}
+      <h1>PREDICTION : Landhi</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Landhi+Town,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8399223,67.1986536,12z/data=!3m1!4b1!4m5!3m4!1s0x3eb33a8057a55201:0xbd26e94080bd50e6!8m2!3d24.8406!4d67.1948187"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/landhi.jpg')}}"
+      /></a>
+
+      {%elif data == 12%}
+      <h1>PREDICTION : UP More</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Up+More/@24.9728003,67.0579988,15z/data=!4m9!1m2!2m1!1sUP+more!3m5!1s0x3eb340ebd119ec8d:0x76ec2ef8a77da05b!8m2!3d24.9728003!4d67.0667535!15sCgdVUCBtb3JlWhIKB3VwIG1vcmUiB3VwIG1vcmWSAQhidXNfc3RvcJoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VNNGVUUk1iR3QzUlJBQg"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/UP.jpg')}}"
+      /></a>
+
+      {%elif data == 10%}
+      <h1>PREDICTION : Dhoraji</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Dhoraji+Gulshan-e-Iqbal,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8873682,67.0766355,16z/data=!3m1!4b1!4m5!3m4!1s0x3eb33ec44a8065c1:0x30429af2e0073ee9!8m2!3d24.8872435!4d67.0768584"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/dhoraji.jpg')}}"
+      /></a>
+
+      {%elif data == 9%}
+      <h1>PREDICTION : Nagan Chowrangi</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Nagan+Chowrangi+Flyover,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9645962,67.0671306,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb340959f743d53:0x187dcbe4eb81b078!8m2!3d24.9645962!4d67.0671306"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/nagan.jpg')}}"
+      /></a>
+
+      {%elif data == 7%}
+      <h1>PREDICTION : Pakistan Chowk</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Pakistan+Chowk,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8539874,67.0124112,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb33e0f140f7ec7:0x9deea907ba213923!8m2!3d24.8539874!4d67.0124112"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/pakchowk.jpg')}}"
+      /></a>
+
+      {%elif data == 3%}
+      <h1>PREDICTION : Jamshed Road</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Jamshed+Rd,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8835416,67.0470572,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb33e595bbc701f:0xf8901035f404169!8m2!3d24.8835416!4d67.0470572"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/jamshed.jpg')}}"
+      /></a>
+
+      {%elif data == 2%}
+      <h1>PREDICTION : Askari</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Askari+IV+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9014128,67.1209582,16z/data=!3m1!4b1!4m5!3m4!1s0x3eb33919ce92c519:0x20dcf3ebc0b01ac0!8m2!3d24.9013973!4d67.1201853"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/Askari.jpg')}}"
+      /></a>
+
+      {%elif data == 46%}
+      <h1>PREDICTION : SITE Area</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Site+area/@24.9100741,66.9431231,13z/data=!4m9!1m2!2m1!1ssite+area!3m5!1s0x3eb31560629ed1a9:0x62c94e7f48677114!8m2!3d24.9100741!4d66.978142!15sCglzaXRlIGFyZWFaEQoEYXJlYSIJc2l0ZSBhcmVhkgEPc2hvcHBpbmdfY2VudGVymgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVVI1YzJKWFNtcFJSUkFC"
+        ><img
+          class="size"
+          src="{{url_for('static', filename='Images/site area.jpg')}}"
+      /></a>
+
+      {%else%}
+      <h1>PREDICTION : Nazimabad</h1>
+      <h3>Click the image to checkout the map location</h3>
+      <a
+        href="https://www.google.com/maps/place/Nazimabad,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9152282,67.0151014,14z/data=!3m1!4b1!4m5!3m4!1s0x3eb33fbd469d9bcd:0x749325c6e39952f3!8m2!3d24.910688!4d67.0310973"
+      >
+        <img
+          class="size"
+          src="{{url_for('static', filename='Images/Naya Nazimabad.jpg')}}"
+        />
+      </a>
+      {%endif%}
+
+      <br /><br />
+      <a href="/home"
+        ><center><button class="btn">Home Page</button></center></a
+      >
+    </center>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servay Form</title>
+  <style type="text/css">
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-image: url(static/Images/f3.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: large;
+    /* font-family: "Poppins", sans-serif; */
+    margin-top: 40px;
+  }
+  .heading{
+    width: 800px;
+    background-color: rgb(0,0,0,0.6);
+    margin: auto;
+    color: #FFFFFF;
+    padding: 10px 0px 10px 0px;
+    text-align:center;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .mane{
+    background-color: rgb(0,0,0,0.5);
+    width: 800px;
+    margin: auto;
+  }
+  form{
+    padding: 10px;
+  }
+  /* #q1{
+    width: 100%;
+    height: 100px;
+  } */
+  .option option{
+    font-size: 14px;
+  }
+  .predict{
+    background-color: rgb(0,0,0,0.6);
+    display: block;
+    margin: 12px 0px 0px 12px;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #366473;
+    padding: 14px 80px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.25px;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-size: 20px;
+  }
+  @media (max-width: 992px) {
+  }
+  @media (max-width: 768px) {
+    .heading{
+    width: 80%;
+    height: 100%;
+  }
+    .mane{
+    width: 80%;
+    height: 100%;
+  }
+  
+}
+  </style>
+</head>
+<center>
+<body>
+<div style = "color:rgb(255, 255, 255)">
+  <div class="heading"><h1> Residential Recommendation System</h1></div><br>
+  <!-- , action="{{url_for('home')}}" -->
+<div class="mane">
+  <form method="POST", action="{{url_for('predict')}}">
+  <div id="q1"><h4 class="near">Which Three (3) nearby place you would prefer?</h4><br>
+     <select class="option" name ="a">
+       <option value ="Parks,Restaraunts,Grocery Stores">Parks,Restaraunts,Grocery Stores</option>
+       <option value ="Grocery Stores,Mosques,Recreational Clubs">Grocery Stores,Mosques,Recreational Clubs</option>
+       <option value ="Parks,Restaraunts,Grocery Stores">Parks,Restaraunts,Grocery Stores</option>
+       <option value ="Parks,Grocery Stores,Recreational Clubs">Parks,Grocery Stores,Recreational Clubs</option>
+       <option value ="Parks,Mosques,Recreational Clubs">Parks,Mosques,Recreational Clubs</option>
+       <option value ="Restaraunts,Grocery Stores,Recreational Clubs">Restaraunts,Grocery Stores,Recreational Clubs</option>
+       <option value ="Parks,Grocery Stores,Mosques">Parks,Grocery Stores,Mosques</option>
+       <option value ="Restaraunts,Grocery Stores,Mosques">Restaraunts,Grocery Stores,Mosques</option>
+       <option value ="Parks,Restaraunts,Recreational Clubs">Parks,Restaraunts,Recreational Clubs</option>
+     </select>
+    </div><br>
+    <div id="q2"><h4 class="Areatype">Which type of Area you prefer?</h4><br>
+    <select class="Area" name ="b">
+      <option value ="Social, Quiet, Private">Social, Quiet, Private</option>
+      <option value ="Social, Noisy, Public">Social, Noisy, Public</option>
+      <option value ="Anti-social, Quiet , Private">Anti-social, Quiet , Private</option>
+    </select></div>
+      <br>
+     <div id="q3"><h4 class="cleaness">How clean you want your Area will be?<h4><br> 
+      <select class="clean" name="c">Select any option
+        <option value="1">1
+        </option>
+        <option value="2">2
+        </option>
+        <option value="3">3
+        </option>
+        <option value="4">4
+        </option>
+        <option value="5">5
+        </option>
+      </select></div><br>
+     <div id="q4"><h4 class="callyour">What would you call yourself (see the options)?<h4><br>
+    <select class="call" name ="d">
+      <option value ="Introvert">Introvert</option>
+      <option value ="Extrovert">Extrovert</option>
+      <option value ="Ambivert">Ambivert</option>
+    </select></div>
+    <br>
+    <div id="q5" class="mentalpeace"><h4>Do you prefer mental peace?<h4><br>
+    <select class="peace" name ="e">
+      <option value ="Yes">Yes</option>
+      <option value ="No">No</option>
+    </select></div><br>
+    <div id="q6"><h4 class="react">What will be your reaction on if you lack something?<h4><br>
+    <select class = "reaction" name ="f">
+      <option value ="Pursue something else">Pursue something else</option>
+      <option value ="Fight for it">Fight for it</option>
+    </select></div><br>
+    <div id="q7"><h4 class="activity">What activities you would prefer in your time?<h4><br>
+    <select class="activities" name ="g">
+      <option value ="Socialize">Socialize</option>
+      <option value ="Kill time">Kill time</option>
+      <option value ="Pursue hobbies (Sports, Reading, Painting etc)">Pursue hobbies (Sports, Reading, Painting etc)</option>
+      <option value ="Study">Study</option>
+    </select></div><br>
+    <div id="q8"><h4 class="oftenout">How often you would go for outing?<h4><br>
+    <select class="often" name ="h">
+      <option value ="Once or twice a week">Once or twice a week</option>
+      <option value ="Once or twice a month">Once or twice a month</option>
+      <option value ="Rarely">Rarely</option>
+      <option value ="Multiple times a week">Multiple times a week</option>
+    </select></div><br>
+     <div id="q9"><h4 class="rel matter">What would you do if you and your friend conflict on a religious matter?<h4><br>
+    <select class="matter" name ="i">
+      <option value ="Talk about the topic respecting eachother's views">Talk about the topic respecting eachother's views</option>
+      <option value ="Never talk about that topic">Never talk about that topic</option>
+      <option value ="Try to change the other person's view">Try to change the other person's view</option>
+    </select></div><br>
+     <div id="q10"><h4 class="out">What are your outing preference?<h4><br>
+    <select class="outing" name ="j">
+      <option value ="Desi">Desi</option>
+      <option value ="KFC">KFC</option>
+      <option value ="Dominos">Dominos</option>
+      <option value ="Aylanto">Aylanto</option>
+      <option value ="Ginsoy">Ginsoy</option>
+    </select><br><br></div>
+            <center><input class="predict" type="submit" , value='predict!'></center><br><br>
+    </form>
+    </div>
+</body>
+</center>
+</html>
